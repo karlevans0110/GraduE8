@@ -30,6 +30,7 @@ header {
     font-size: 21.7px;
     border-width: 12px;
     background-color: wheat;
+    padding: 20px;
 }
 .egzamin_item, .ocena_item, .osiagniecie_item {
     border: #2c3e50;
