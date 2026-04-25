@@ -12,3 +12,4 @@ Prosta i intuicyjna aplikacja webowa pomagająca uczniom klas ósmych obliczyć 
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Node.js](https://nodejs.org/en)
+- HTML5/CSS
