@@ -4,28 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator punktów do szkoły średniej</title>
+    <link rel="stylesheet" href="src/style.css">
   </head>
   <body>
     <div id="app">
       <header><h1>Kalkulator punktów do szkoły średniej</h1></header>
       <main>
-        <form action="">
+        <form>
           <section id="egzaminy">
             <h2>Wyniki z egzaminów ósmoklasisty</h2>
-            <input type="checkbox" name="nie-znam-wynikow" id="nie-znam-wynikow">
-            <label for="nie-znam-wynikow">Nie znam jeszcze swoich wyników</label>
+            <div class="osiagniecie_item" id="nie-znam-wynikow-input">
+              <input type="checkbox" name="nie-znam-wynikow" id="nie-znam-wynikow">
+              <label for="nie-znam-wynikow">Nie znam jeszcze swoich wyników</label>
+            </div>
             <div class="grid_container">
               <div class="egzamin_item">
                 <label for="wynik-e8-polski">Wynik z E8 z języka polskiego</label><br>
-                <input type="number" name="wynik-e8-polski" id="wynik-e8-polski" placeholder="np. 80%">
+                <input type="number" name="wynik-e8-polski" id="wynik-e8-polski" placeholder=" np. 80%">
               </div>
               <div class="egzamin_item">
                 <label for="wynik-e8-matma">Wynik z E8 z matematyki</label><br>
-                <input type="number" name="wynik-e8-matma" id="wynik-e8-matma" placeholder="np. 80%">
+                <input type="number" name="wynik-e8-matma" id="wynik-e8-matma" placeholder=" np. 80%">
               </div>
               <div class="egzamin_item">
                 <label for="wynik-e8-angol">Wynik z E8 z języka obcego nowożytnego</label><br>
-                <input type="number" name="wynik-e8-angol" id="wynik-e8-angol" placeholder="np. 80%">
+                <input type="number" name="wynik-e8-angol" id="wynik-e8-angol" placeholder=" np. 80%">
               </div>
             </div>
           </section><hr>
@@ -97,14 +100,14 @@
                 <input type="checkbox" name="laureat" id="laureat">
                 <label for="laureat">Laureat wojewódzkiego konkursu przedmiotowego</label>
               </div>
-              <div class="osiagniecie_item">
-                <label for="dod">Inne dodatkowe punkty</label><br>
+              <div class="osiagniecie_item" id="dodatkowe">
+                <label for="dod" id="dod-label">Inne dodatkowe punkty</label><br>
                 <input type="number" name="dod" id="dod">
               </div>
             </div>
           </section><hr>
-          <div class="zatwierz_container">
-            <button type="submit" id="zatwierz_bttn">Licz!</button>
+          <div class="zatwierdz_container">
+            <button type="submit" id="zatwierdz_bttn">Licz!</button>
           </div>
         </form>
       </main>
