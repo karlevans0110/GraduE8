@@ -20,15 +20,15 @@
             <div class="grid_container">
               <div class="egzamin_item">
                 <label for="wynik-e8-polski">Wynik z E8 z języka polskiego</label><br>
-                <input type="number" name="wynik-e8-polski" id="wynik-e8-polski" placeholder=" np. 80%">
+                <input type="number" name="wynik-e8-polski" id="wynik-e8-polski" placeholder=" 0% - 100%" min="1" max="100">
               </div>
               <div class="egzamin_item">
                 <label for="wynik-e8-matma">Wynik z E8 z matematyki</label><br>
-                <input type="number" name="wynik-e8-matma" id="wynik-e8-matma" placeholder=" np. 80%">
+                <input type="number" name="wynik-e8-matma" id="wynik-e8-matma" placeholder=" 0% - 100%" min="1" max="100">
               </div>
               <div class="egzamin_item">
                 <label for="wynik-e8-angol">Wynik z E8 z języka obcego nowożytnego</label><br>
-                <input type="number" name="wynik-e8-angol" id="wynik-e8-angol" placeholder=" np. 80%">
+                <input type="number" name="wynik-e8-angol" id="wynik-e8-angol" placeholder=" 0% - 100%" min="1" max="100">
               </div>
             </div>
           </section><hr>
@@ -111,7 +111,10 @@
           </div>
         </form>
       </main>
-      <footer><h2 id="wynik_print"></h2></footer>
+      <footer>
+        <h2 id="wynik_print"></h2>
+        <h3 id="analiza_print"></h3>
+      </footer>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
